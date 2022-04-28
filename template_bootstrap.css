@@ -1,0 +1,34 @@
+article, aside, dialog, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+/* ブラウザが勝手につけるマージンの削除。* とする例もあるが、body だけで済むならそれでよし */
+body {
+ margin: 0;
+}
+
+/* フッター固定のためのレイアウト */
+html {
+ position: relative;
+ min-height: 100%;
+}
+body {
+ margin-bottom: 30px;
+}
+.footerdiv {
+ position: absolute;
+ bottom: 0;
+ width: 100%;
+ /* Set the fixed height of the footer here */
+ height: 30px;
+ border: 1px blue dashed;
+}
+
+/* 外観 */
+header {
+	border: 1px darkgreen dotted;	
+}
+footer {
+	border: 1px navy dashed;
+}
+main {
+	border: 1px red dashed;
+}
